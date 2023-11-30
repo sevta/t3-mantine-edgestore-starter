@@ -10,7 +10,6 @@ import {
   MenuTarget,
   Text,
 } from "@mantine/core";
-import { IconMailCog } from "@tabler/icons-react";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 interface AuthButtonProps extends ButtonProps {
@@ -26,13 +25,8 @@ export default function AuthButton({
   return (
     <div>
       {session.status === "unauthenticated" ? (
-        <Button
-          variant="light"
-          leftSection={<IconMailCog size={15} />}
-          onClick={() => signIn("google")}
-          {...props}
-        >
-          Login with google
+        <Button variant="light" onClick={() => signIn()} {...props}>
+          Login
         </Button>
       ) : (
         <Menu

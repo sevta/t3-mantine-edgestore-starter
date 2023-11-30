@@ -68,7 +68,7 @@ export const theme = createTheme({
 
   black: "#343a40",
 
-  fontFamily: "Geist Mono",
+  fontFamily: "Geist",
   headings: {
     fontFamily: "Geist",
   },
@@ -101,6 +101,7 @@ export const theme = createTheme({
     Button: Button.extend({
       defaultProps: {
         radius: "xl",
+        fw: 500,
       },
     }),
     NavLink: NavLink.extend({

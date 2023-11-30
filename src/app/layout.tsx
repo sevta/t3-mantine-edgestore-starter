@@ -5,6 +5,8 @@ import { TRPCReactProvider } from "@/trpc/react";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import { ModalsProvider } from "@mantine/modals";
+import { Notifications } from "@mantine/notifications";
+import "@mantine/notifications/styles.css";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import { cookies } from "next/headers";
@@ -30,6 +32,7 @@ export default function RootLayout({
           <EdgeStoreProvider>
             <TRPCReactProvider cookies={cookies().toString()}>
               <MantineProvider theme={theme}>
+                <Notifications />
                 <ModalsProvider
                   labels={{
                     confirm: "Confirm",
