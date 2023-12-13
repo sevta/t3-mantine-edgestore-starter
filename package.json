@@ -33,7 +33,7 @@
     "bcrypt": "^5.1.1",
     "dayjs": "^1.11.10",
     "geist": "^1.1.0",
-    "next": "^14.0.3",
+    "next": "14.0.4",
     "next-auth": "^4.24.5",
     "nextjs-toploader": "^1.6.4",
     "react": "18.2.0",
